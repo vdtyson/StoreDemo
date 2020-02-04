@@ -10,7 +10,7 @@ import retrofit2.http.GET
 
 interface QuotesApi {
 
-    @GET("random.json")
+    @GET("qod.json")
     suspend fun fetchRandomQuote(): Response<DTO.Quote>
 
     sealed class DTO {
@@ -24,7 +24,7 @@ interface QuotesApi {
         val service =
             Retrofit
                 .Builder()
-                .baseUrl("https://quotes.rest/quote/")
+                .baseUrl("https://quotes.rest/")
                 .addConverterFactory(
                     MoshiConverterFactory.create(
                         Moshi.Builder().add(
