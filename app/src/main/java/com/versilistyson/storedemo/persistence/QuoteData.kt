@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
     tableName = "quote_table"
 )
 data class QuoteData(
-    @ColumnInfo(name = "id") @PrimaryKey(autoGenerate = true) val id: Long = 0,
-    @ColumnInfo(name = "quote") val quote: String,
+    @ColumnInfo(name = "id") @PrimaryKey(autoGenerate = false) val id: String,
+    @ColumnInfo(name = "content") val content: String,
     @ColumnInfo(name = "author") val author: String
 )

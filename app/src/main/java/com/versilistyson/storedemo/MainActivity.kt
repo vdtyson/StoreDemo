@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
                     when(value) {
                         is StoreResponse.Data -> {
-                            textView_newQuote.text = value.value.quote
+                            textView_newQuote.text = value.value.content
                         }
                         is StoreResponse.Error -> {
                             textView_newQuote.text = value.error.message

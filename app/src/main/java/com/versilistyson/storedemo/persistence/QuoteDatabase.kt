@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [QuoteData::class], version = 1, exportSchema = false)
+@Database(entities = [QuoteData::class], version = 2, exportSchema = false)
 abstract class QuoteDatabase: RoomDatabase() {
     abstract fun quoteDao(): QuoteDao
 

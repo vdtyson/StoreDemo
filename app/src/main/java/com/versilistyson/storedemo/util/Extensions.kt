@@ -5,6 +5,7 @@ import com.versilistyson.storedemo.persistence.QuoteData
 
 fun QuotesApi.DTO.Quote.map() : QuoteData =
     QuoteData(
-        quote = quote,
+        id = id,
+        content = content,
         author = author
     )
